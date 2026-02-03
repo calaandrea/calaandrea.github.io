@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Andrea Calà</title>
+
+  <!-- EB Garamond -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 60px 40px;
+      font-family: 'EB Garamond', serif;
+      background: #ffffff;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 680px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 400;
+      margin-bottom: 60px;
+    }
+
+    /* PREVIEW PLACEHOLDER (3:2 ORIZZONTALE) */
+    .preview {
+      width: 560px;
+      height: 373px;
+      background-color: #f2f2f2;
+      margin-bottom: 80px;
+
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    h2 {
+      font-size: 22px;
+      font-weight: 400;
+      margin-bottom: 20px;
+      letter-spacing: 0;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .works a,
+    .contacts a {
+      display: block;
+      font-size: 21px;
+      text-decoration: none;
+      color: #111;
+      margin-bottom: 6px;
+      font-weight: 400;
+    }
+
+    .works a:hover,
+    .contacts a:hover {
+      text-decoration: underline;
+    }
+
+    .contacts {
+      margin-top: 120px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Andrea Calà</h1>
+
+    <!-- Preview image -->
+    <div id="preview" class="preview"></div>
+
+    <section class="works">
+      <h2>Works</h2>
+      <a href="assets/pdf/project-01.pdf" target="_blank">Project 01</a>
+      <a href="assets/pdf/project-02.pdf" target="_blank">Project 02</a>
+      <a href="assets/pdf/project-03.pdf" target="_blank">Project 03</a>
+    </section>
+
+    <section class="contacts">
+      <h2>Contacts</h2>
+      <a href="mailto:cala.andrea@protonmail.com">
+        cala.andrea@protonmail.com
+      </a>
+    </section>
+  </div>
+
+  <!-- JS esterno -->
+  <script src="assets/js/preview.js"></script>
+</body>
+</html>
