@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  padding: 60px 40px;
+  font-family: 'EB Garamond', serif;
+  background: #ffffff;
+  color: #111;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 680px;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+
+.preview {
+  width: 560px;
+  height: 373px;
+  background-color: #f2f2f2;
+  margin-bottom: 80px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  letter-spacing: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.works a,
+.contacts a {
+  display: block;
+  font-size: 21px;
+  text-decoration: none;
+  color: #111;
+  margin-bottom: 6px;
+  font-weight: 400;
+}
+
+.works a:hover,
+.contacts a:hover {
+  text-decoration: underline;
+}
+
+.contacts {
+  margin-top: 120px;
+}
+
+/* PROJECT PAGE */
+
+.project {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.project h1 {
+  margin-bottom: 20px;
+}
+
+.project-description {
+  max-width: 520px;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+.thumbs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.thumbs img {
+  width: 100%;
+  cursor: pointer;
+}
