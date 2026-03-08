@@ -1,7 +1,7 @@
 const images = [
-  "assets/images/previews/preview1.jpg",
-  "assets/images/previews/preview2.jpg",
-  "assets/images/previews/preview3.jpg"
+  "assets/images/previews/2026_Lifeboat00001.jpg",
+  "assets/images/previews/2026_Lifeboat00002.jpg",
+  "assets/images/previews/2026_Lifeboat00003.jpg"
 ];
 
 const randomImage = images[Math.floor(Math.random() * images.length)];
