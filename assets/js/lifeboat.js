@@ -25,6 +25,14 @@ document.addEventListener('DOMContentLoaded', () => {
     div.className = 'thumb-item';
     const img = document.createElement('img');
     img.src = src;
+
+    img.onload = () => {
+      const ratio = img.naturalWidth / img.naturalHeight;
+      if (ratio > 1.7) {
+        div.style.gridColumn = 'span 2';
+      }
+    };
+
     img.addEventListener('click', () => openLightbox(idx));
     div.appendChild(img);
     thumbsContainer.appendChild(div);
