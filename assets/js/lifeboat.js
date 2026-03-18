@@ -1,30 +1,59 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const images = [];
+  const sequence = [
+    '2026_Lifeboat00001.jpg',
+    null,
+    '2026_Lifeboat00002.jpg',
+    '2026_Lifeboat00003.jpg',
+    '2026_Lifeboat00004.jpg',
+    '2026_Lifeboat00005.jpg',
+    '2026_Lifeboat00006.jpg',
+    null,
+    '2026_Lifeboat00007.jpg',
+    '2026_Lifeboat00008.jpg',
+    '2026_Lifeboat00009.jpg',
+    '2026_Lifeboat00010.jpg',
+    '2026_Lifeboat00011.jpg',
+    '2026_Lifeboat00012.jpg',
+    '2026_Lifeboat00013.jpg',
+    null,
+    '2026_Lifeboat00014.jpg',
+    '2026_Lifeboat00015.jpg',
+    '2026_Lifeboat00016.jpg',
+    '2026_Lifeboat00017.jpg',
+    '2026_Lifeboat00018.jpg',
+    '2026_Lifeboat00019.jpg',
+    '2026_Lifeboat00020.jpg',
+    '2026_Lifeboat00021.jpg',
+    '2026_Lifeboat00022.jpg',
+  ];
+
+  const images = sequence
+    .filter(f => f !== null)
+    .map(f => `../assets/images/lifeboat/${f}`);
+
   const thumbsContainer = document.getElementById('thumbs');
   const lb = document.getElementById('lightbox');
   const lbImg = document.getElementById('lbImg');
   let currentIndex = 0;
 
-  function loadImages(i) {
-    const num = i.toString().padStart(5, '0');
-    const src = `../assets/images/lifeboat/2026_Lifeboat${num}.jpg`;
-    const tester = new Image();
-    tester.onload = () => {
-      images.push(src);
-      addThumb(src, images.length - 1);
-      loadImages(i + 1);
-    };
-    tester.onerror = () => {
-      // nessuna altra foto trovata, ci fermiamo
-    };
-    tester.src = src;
-  }
+  let galleryIndex = 0;
 
-  function addThumb(src, idx) {
+  sequence.forEach(file => {
     const div = document.createElement('div');
     div.className = 'thumb-item';
+
+    if (file === null) {
+      // cella vuota
+      thumbsContainer.appendChild(div);
+      return;
+    }
+
+    const src = `../assets/images/lifeboat/${file}`;
     const img = document.createElement('img');
     img.src = src;
+
+    const idx = galleryIndex;
+    galleryIndex++;
 
     img.onload = () => {
       const ratio = img.naturalWidth / img.naturalHeight;
@@ -36,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
     img.addEventListener('click', () => openLightbox(idx));
     div.appendChild(img);
     thumbsContainer.appendChild(div);
-  }
+  });
 
   function openLightbox(idx) {
     currentIndex = idx;
@@ -57,6 +86,4 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.key === 'ArrowLeft') prevImage();
     if (e.key === 'ArrowRight') nextImage();
   });
-
-  loadImages(1);
 });
