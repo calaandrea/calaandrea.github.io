@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Vector Field — Andrea Calà</title>
+
+<meta name="description" content="Each photograph is a point in a field: carrying a direction, an intensity, a charge that belongs not to a place or a moment but to the logic that connects them.">
+<meta property="og:title" content="Vector Field — Andrea Calà">
+<meta property="og:description" content="Each photograph is a point in a field: carrying a direction, an intensity, a charge that belongs not to a place or a moment but to the logic that connects them.">
+<meta property="og:image" content="https://andreacala.com/assets/images/vector-field/VectorField00001.jpg">
+<meta property="og:url" content="https://andreacala.com/vector-field/">
+<meta property="og:type" content="website">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z2HXCMDSW8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-Z2HXCMDSW8');
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../assets/css/style.css">
+
+<style>
+.project-name {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  font-size: 21px;
+  font-weight: 400;
+}
+.project-name a {
+  text-decoration: none;
+  color: #111;
+}
+.project-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 120px 0 40px 0;
+}
+.project-description{
+  max-width:520px;
+  margin:auto;
+  margin-bottom:60px;
+  text-align:center;
+}
+.thumbs {
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4px;
+  margin-top: 40px;
+}
+.thumb-item {
+  text-align:center;
+}
+.thumb-item img {
+  width:100%;
+  max-height: 500px;
+  object-fit: contain;
+  display:block;
+  cursor:pointer;
+  transition: opacity 0.2s ease;
+}
+.thumb-item img:hover {
+  opacity: 0.85;
+}
+.thumb-caption {
+  display: none;
+}
+#lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0,0,0,.92);
+  align-items: center;
+  justify-content: center;
+}
+#lbImg {
+  max-width: 60%;
+  max-height: 60%;
+  object-fit: contain;
+}
+
+@media (max-width: 1024px) {
+  #lbImg {
+    max-width: 80%;
+    max-height: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  #lbImg {
+    max-width: 95%;
+    max-height: 95%;
+  }
+}
+.lb-control {
+  position:absolute;
+  color:white;
+  font-size:36px;
+  cursor:pointer;
+  user-select:none;
+  z-index: 10000;
+}
+#lbPrev { left:40px; }
+#lbNext { right:40px; }
+#lbClose { top:30px; right:40px; font-size:28px; }
+</style>
+
+</head>
+<body>
+
+<div class="project">
+  <div class="project-name">
+    <a href="../index.html">Andrea Calà</a>
+  </div>
+
+  <h1 class="project-title">Vector Field</h1>
+
+  <div class="project-description">
+    <p>These photographs do not document a journey in any conventional sense — no itinerary, no sequence of arrivals. What they record is harder to name: the accumulated force of choices made together, desires held in common, things willingly left behind.</p>
+
+    <p>Kurt Lewin proposed that human behavior cannot be understood apart from the field in which it occurs — a dynamic space shaped by forces, tensions, and the vectors that emerge from them. Direction, in this model, is never simply chosen. It is generated. It is the result of everything acting at once.</p>
+
+    <p>These images work the same way. Each one is a point in a field: carrying a direction, an intensity, a charge that belongs not to a place or a moment but to the logic that connects them. Taken together, they describe a field that two people built without knowing they were building it — through proximity, through resistance, through a shared inclination toward openness.</p>
+
+    <p>A field does not close. New forces enter it. What began as orientation is becoming something else — a space large enough to contain what has not yet happened.</p>
+  </div>
+
+  <div class="thumbs" id="thumbs"></div>
+</div>
+
+<div id="lightbox">
+  <span id="lbPrev" class="lb-control">←</span>
+  <img id="lbImg" src="">
+  <span id="lbNext" class="lb-control">→</span>
+  <span id="lbClose" class="lb-control">✕</span>
+</div>
+
+<script src="../assets/js/vector-field.js"></script>
+</body>
+</html>
