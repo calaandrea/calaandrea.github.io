@@ -24,11 +24,14 @@ h1 {
   background-repeat: no-repeat;
 }
 h2 {
-  font-size: 22px;
+  font-size: 26px;
   font-weight: 400;
   margin-bottom: 10px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+h2 a {
+  font-size: inherit;
 }
 .works {
   margin-top: 40px;
@@ -36,7 +39,7 @@ h2 {
 .works a,
 .contacts a {
   display: block;
-  font-size: 16px;
+  font-size: 19px;
   text-decoration: none;
   color: #111;
   margin-bottom: 6px;
