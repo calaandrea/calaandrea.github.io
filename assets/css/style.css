@@ -24,11 +24,10 @@ h1 {
   background-repeat: no-repeat;
 }
 h2 {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 400;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
+  color: #888;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
