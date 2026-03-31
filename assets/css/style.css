@@ -24,10 +24,9 @@ h1 {
   background-repeat: no-repeat;
 }
 h2 {
-  font-size: 14px;
+  font-size: 22px;
   font-weight: 400;
   margin-bottom: 10px;
-  color: #888;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -37,7 +36,7 @@ h2 {
 .works a,
 .contacts a {
   display: block;
-  font-size: 21px;
+  font-size: 16px;
   text-decoration: none;
   color: #111;
   margin-bottom: 6px;
