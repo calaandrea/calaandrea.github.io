@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const sequence = [
     '2026_Lifeboat00001.jpg',
     null,
-    null,
     '2026_Lifeboat00002.jpg',
     '2026_Lifeboat00003.jpg',
     '2026_Lifeboat00004.jpg',
