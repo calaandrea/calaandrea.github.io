@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     '2026_Lifeboat00004.jpg',
     '2026_Lifeboat00005.jpg',
     '2026_Lifeboat00006.jpg',
+    null,
     '2026_Lifeboat00007.jpg',
     '2026_Lifeboat00008.jpg',
     '2026_Lifeboat00009.jpg',
