@@ -52,6 +52,9 @@ h2 a {
 .contacts {
   margin-top: 40px;
 }
+.about {
+  margin-top: 40px;
+}
 /* PROJECT PAGE */
 .project {
   max-width: 900px;
@@ -65,13 +68,4 @@ h2 a {
   max-width: 520px;
   margin: auto;
   margin-bottom: 60px;
-}
-.thumbs {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 12px;
-}
-.thumbs img {
-  width: 100%;
-  cursor: pointer;
 }
